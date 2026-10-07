@@ -4,11 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guake</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #243247;
+      background: #f4f6f9;
+    }
+
+    .container {
+      width: min(100% - 40px, 960px);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 64px 0;
+      color: #ffffff;
+      background: #172b45;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      letter-spacing: -0.04em;
+    }
+
+    header p {
+      margin: 12px 0 0;
+      color: #d5e1ef;
+      font-size: 1.2rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 0;
+    }
+
+    section {
+      padding: clamp(24px, 5vw, 40px);
+      background: #ffffff;
+      border: 1px solid #dde4ed;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgb(23 43 69 / 5%);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.5rem;
+      color: #172b45;
+    }
+
+    section p {
+      margin: 0 0 12px;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      padding: 24px 0;
+      border-top: 1px solid #dde4ed;
+      color: #526177;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Guake</h1>
-  <p>My first codex project</p>
-  <p>Codex is connected to my Github repository and working correctly.</p>
-  <p>This change was made from my Guake Codex environment.</p>
+  <header>
+    <div class="container">
+      <h1>Guake</h1>
+      <p>My first codex project</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About this project</h2>
+      <p>Codex is connected to my Github repository and working correctly.</p>
+      <p>This change was made from my Guake Codex environment.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Guake &middot; A project by butchdog</p>
+    </div>
+  </footer>
 </body>
 </html>
